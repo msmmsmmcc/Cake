@@ -1,48 +1,103 @@
-.banner {
-  background-image: url(../images/bg.png);
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-}
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   padding: 40px;
+
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
+  z-index: 1000;
   border-bottom: 1px solid #7e868e;
-  color: white;
+
+  color: rgb(255, 255, 255);
 }
-.header-phone,
+
 .header-right {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
 }
-.banner-content {
+
+.header-adress,
+.header-phone {
+  align-items: centrel;
+  gap: 10px;
+
+  * {
+    font-family: "Prosto One", sans-serif;
+  }
+}
+
+.bunner {
+  background-image: url(../images/bg.png);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+}
+
+.bunner-content {
   color: white;
   display: flex;
   flex-direction: column;
   gap: 24px;
   align-items: start;
+
+  max-width: 600px;
+  text-wrap: balance;
+
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 24px;
+
+  }
 }
-.banner-overtitle {
-  background-color: white;
-  color: black;
+
+.bunner-overtitle {
+  background-color: rgb(227, 39, 161);
+  color: rgb(212, 143, 180);
   text-transform: uppercase;
   padding: 10px 18px;
   border-radius: 11px;
+  transition: all 0.3s;
+  font-size: 11px;
+  letter-spacing: 10%;
 }
-.banner-catolog {
+
+  .bunner-overtitle:hover {
+background-color: brown;
+
+  }
+
+
+
+
+
+.bunner-catolog {
   display: block;
-  background-color: #ffd84c;
-  color: #000;
+  background-color: rgb(240, 168, 210);
+  color: rgb(0, 0, 0);
   padding: 30px 50px;
   border-radius: 8px;
   text-decoration: none;
+  transition: all 0.3s;
+
+  }
+
+  .bunner-catolog:hover {
+    background-color: rgb(213, 59, 111);
+  }
+
+.bunner-buttons{
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }

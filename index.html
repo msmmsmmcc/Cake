@@ -1,43 +1,76 @@
-<!DOCTYPE html>
-<html lang="en">
+<!Document html>
+  <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cakes</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Prosto+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/catalog.css">
+    <!-- Добавляем catalog -->
+    <script defer src="./assets/js/index.js"></script>
   </head>
+
+
   <body>
-    <header>
-      <h1>Сладкий сундук</h1>
+    <header class="container">
+      <h1>Cладкий сундук</h1>
       <div class="header-right">
         <div class="header-adress">
-          <img src="./assets/icons/adress.svg" alt="./assets/css/style.css" />
-          <p>г. Санкт Петербург, ул. Куйбышева 31</p>
+          <img src="./assets/icons/adress.svg" alt="" />
+          <p>г. Санкт-Пербург, ул. Куйюышева 31</p>
         </div>
-
         <div class="header-phone">
           <img src="./assets/icons/phone.svg" alt="" />
           <div>
             <h2>8 (812) 844-95-49</h2>
-            <p>Ежедневно с 9:00 до 20:00/</p>
+            <p>Ежедневно с 9:00 до 20:00</p>
           </div>
         </div>
       </div>
     </header>
     <main>
-      <section class="banner">
-        <div class="banner-content">
-          <p class="banner-overtitle">Вкуснейшие</p>
-          <h1>приговим за 10 сек</h1>
-          <h2>всем и сразу доставим</h2>
-          <div>
-            <a class="banner-catolog" href="">Перейти в котолог</a>
-            <p>100500 различных видов</p>
+      <section class="bunner container">
+        <div class="bunner-content">
+          <p class="bunner-overtitle">Вкуснейшие</p>
+          <h1>Пирожные + копкейки всем и сразу!</h1>
+          <h2>Приготовим за 5 секунд и доставим на истребители!</h2>
+          <div class="bunner-buttons">
+            <a class="bunner-catolog" href=""> Перейти в каталог </a>
+
+            <p>100500 различных видов на ваш выбор</p>
           </div>
         </div>
       </section>
-    </main>
+      <section class="catalog container">
+        <h1>Супер классные тортики и кексы</h1>
+        <div class="catalog-list">
+          <article class="catalog-item">
+            <img src="./assets/images/Cake.png" alt="">
+            <div class="item-content">
+              <div class="item-info">
+                <h3>Заголовок кейка </h3>
+                <p>Описание какеса</p>
+              </div>
+              <p class="item-price">1млн/штука</p>
+              <button class="item-bth-order"> Купить</button>
+            </div>
+          </article>
 
+        </div>
+
+
+        </div>
+      </section>
+    </main>
     <footer></footer>
   </body>
-</html>
+
+  </html>
